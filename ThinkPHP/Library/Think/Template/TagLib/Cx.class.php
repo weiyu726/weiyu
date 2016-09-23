@@ -438,7 +438,7 @@ class Cx extends TagLib {
     }
 
     /**
-     * import 标签解析 <import file="Js.Base" /> 
+     * import 标签解析 <import file="js.Base" />
      * <import file="Css.Base" type="css" />
      * @access public
      * @param array $tag 标签属性
@@ -512,7 +512,7 @@ class Cx extends TagLib {
         return $parseStr.$endStr;
     }
 
-    // import别名 采用文件方式加载(要使用命名空间必须用import) 例如 <load file="__PUBLIC__/Js/Base.js" />
+    // import别名 采用文件方式加载(要使用命名空间必须用import) 例如 <load file="__PUBLIC__/js/Base.js" />
     public function _load($tag,$content) {
         return $this->_import($tag,$content,true);
     }
@@ -522,7 +522,7 @@ class Cx extends TagLib {
         return $this->_import($tag,$content,true,'css');
     }
 
-    // import别名使用 导入js文件 <js file="__PUBLIC__/Js/Base.js" />
+    // import别名使用 导入js文件 <js file="__PUBLIC__/js/Base.js" />
     public function _js($tag,$content) {
         return $this->_import($tag,$content,true,'js');
     }

@@ -1,5 +1,12 @@
 <?php
+define('BASE_URL','http://www.admin.com');
 return array(
+    'URL_MODEL'=>2,
+    'TMPL_PARSE_STRING'=>[
+        '__CSS__'=> BASE_URL . '/Public/Admin/css',
+        '__JS__'=> BASE_URL . '/Public/Admin/js',
+        '__IMG__'=> BASE_URL . '/Public/Admin/img',
+            ],
     /* 数据库设置 */
     'DB_TYPE'               =>  'mysql',     // 数据库类型
     'DB_HOST'               =>  '127.0.0.1', // 服务器地址
@@ -16,4 +23,11 @@ return array(
     'DB_RW_SEPARATE'        =>  false,       // 数据库读写是否分离 主从式有效
     'DB_MASTER_NUM'         =>  1, // 读写分离后 主服务器数量
     'DB_SLAVE_NO'           =>  '', // 指定从服务器序号
+
+    'URL_CASE_INSENSITIVE'  =>  true,   // 默认false 表示URL区分大小写 true则表示不区分大小写
+
+
+
+
+
 );
