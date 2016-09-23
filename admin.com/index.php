@@ -23,7 +23,6 @@ define('ROOT_PATH',__DIR__.'/');
 define('APP_PATH',ROOT_PATH.'/Application/');
 //使用单模块
 define('BIND_MODULE','Admin');
-//define('BIND_MODULE','Admin');
 
 // 引入ThinkPHP入口文件
 require dirname(ROOT_PATH).'./ThinkPHP/ThinkPHP.php';
